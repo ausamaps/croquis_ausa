@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #030810;
+  font-family: 'Exo 2', 'Segoe UI', system-ui, sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #0a3a50; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #006070; }
+
+/* ── Inputs ─────────────────────────────────────────────────────────────── */
+input[type="number"]:focus { outline: 1px solid #00d8ff; }
+input[type="number"]::-webkit-inner-spin-button { opacity: 0.3; }
+input[type="range"] { height: 3px; cursor: pointer; }
+button { font-family: inherit; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   HUD PANEL FRAME
+   The reference image shows panels with:
+   - Dark outer border with diagonal "slash" decorations at corners
+   - Inner glow along edges
+   - Title bar separated by a line with tech notches
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Outer app wrapper — dark bg, panels float inside */
+.hud-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #030810;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Tech frame corners — applied via ::before/::after on panels */
+.hud-panel {
+  position: relative;
+  background: #060d18;
+  border: 1px solid #0a2a40;
+  box-shadow:
+    0 0 0 1px rgba(0,216,255,0.03),
+    0 4px 24px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(0,216,255,0.03);
+}
+
+/* Bracket corners for panels — 4 corners via React component, 2 via CSS */
+.hud-panel::before,
+.hud-panel::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Top-left bracket */
+.hud-panel::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid #00d8ff;
+  border-left: 2px solid #00d8ff;
+}
+
+/* Bottom-right bracket */
+.hud-panel::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid #00d8ff;
+  border-right: 2px solid #00d8ff;
+}
+
+/* ── HUD Button — the exact style from reference ─────────────────────────
+   • Full rounded (border-radius: 22px)
+   • Background: gradient dark blue-black
+   • Border: 1px solid #0a3a50 (dim cyan)
+   • Icon: small, cyan, left-aligned with slight bg box
+   • Height: ~38px (compact)
+   • Hover: border brightens to #00d8ff, box-shadow glow
+   • Active: cyan gradient bg, bright border, inner highlight
+   • Danger: red scheme
+   ──────────────────────────────────────────────────────────────────────── */
+.hud-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  margin-bottom: 6px;
+  padding: 0 12px 0 8px;
+  gap: 10px;
+  border-radius: 22px;
+  border: 1px solid #0a3a50;
+  background: linear-gradient(180deg, #071422 0%, #04090f 100%);
+  color: #c0dce8;
+  font-family: 'Exo 2', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.hud-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.hud-btn:not(:disabled):hover {
+  border-color: #00d8ff;
+  background: linear-gradient(180deg, #0a2038 0%, #061018 100%);
+  box-shadow: 0 0 16px rgba(0,216,255,0.22), inset 0 0 12px rgba(0,216,255,0.06);
+  color: #e8f8ff;
+}
+
+/* Active state (Grilla, Snap) */
+.hud-btn.active {
+  border-color: #00d8ff;
+  background: linear-gradient(180deg, #004d66 0%, #002535 100%);
+  box-shadow: 0 0 20px rgba(0,216,255,0.35), inset 0 1px 0 rgba(0,216,255,0.5);
+  color: #00d8ff;
+  font-weight: 600;
+}
+
+/* Top shine line on active */
+.hud-btn.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,216,255,0.8), transparent);
+}
+
+/* Danger (Eliminar) */
+.hud-btn.danger {
+  border-color: #5a0010;
+  background: linear-gradient(180deg, #1a0408 0%, #0d0204 100%);
+  color: #ff2040;
+}
+
+.hud-btn.danger:not(:disabled):hover {
+  border-color: #ff2040;
+  background: linear-gradient(180deg, #2a0610 0%, #150306 100%);
+  box-shadow: 0 0 16px rgba(255,32,64,0.25), inset 0 0 10px rgba(255,32,64,0.06);
+  color: #ff4060;
+}
+
+/* Icon inside button */
+.hud-btn .btn-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,216,255,0.07);
+  border: 1px solid rgba(0,216,255,0.15);
+  flex-shrink: 0;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+
+.hud-btn.active .btn-icon {
+  background: rgba(0,216,255,0.2);
+  border-color: rgba(0,216,255,0.5);
+  box-shadow: 0 0 8px rgba(0,216,255,0.3);
+}
+
+.hud-btn.danger .btn-icon {
+  background: rgba(255,32,64,0.12);
+  border-color: rgba(255,32,64,0.3);
+}
+
+.hud-btn:not(:disabled):hover .btn-icon {
+  background: rgba(0,216,255,0.12);
+  border-color: rgba(0,216,255,0.35);
+}
+
+.hud-btn.danger:not(:disabled):hover .btn-icon {
+  background: rgba(255,32,64,0.2);
+  border-color: rgba(255,32,64,0.5);
+}
+
+/* ── Section divider ─────────────────────────────────────────────────────*/
+.hud-divider {
+  height: 1px;
+  margin: 4px 0 10px;
+  background: linear-gradient(90deg, transparent, #0a3050, transparent);
+}
+
+/* ── Panel title header ──────────────────────────────────────────────────
+   The reference shows a title bar with:
+   - Bottom border that has a notch/cut in the middle
+   - Irregular lines giving a "tech circuit" look
+   ─────────────────────────────────────────────────────────────────────── */
+.panel-title-bar {
+  padding: 13px 14px 11px;
+  flex-shrink: 0;
+  position: relative;
+  /* Bottom border with glow */
+  border-bottom: 1px solid #0a3050;
+}
+
+/* Notch decoration below title */
+.panel-title-bar::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 30%;
+  right: 30%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00d8ff, transparent);
+  opacity: 0.6;
+}
+
+/* ── Tech corner decoration (SVG bracket corners on panels) ─────────────*/
+.tech-corners {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ── Group row in library panel ─────────────────────────────────────────*/
+.lib-group-row {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 10px;
+  transition: background 0.12s;
+  margin-bottom: 2px;
+}
+
+.lib-group-row:hover {
+  background: rgba(0,216,255,0.06);
+}
+
+.lib-group-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  border: 1.5px solid #0a3a50;
+  background: #071422;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: all 0.12s;
+}
+
+.lib-group-row:hover .lib-group-icon {
+  border-color: #006070;
+  background: #091c30;
+}
+
+.lib-group-label {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #c0dce8;
+  text-transform: uppercase;
+}
+
+.lib-group-count {
+  color: #1e5a6e;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+/* Chevron — brighter so it's visible */
+.lib-group-chevron {
+  font-size: 13px;
+  color: #4a9ab0;  /* much brighter than before */
+  transition: transform 0.2s;
+  display: inline-block;
+  font-style: normal;
+}
+
+.lib-group-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* ── Library item ────────────────────────────────────────────────────────*/
+.lib-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 10px;
+  margin-bottom: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.lib-item:hover {
+  background: rgba(0,216,255,0.07);
+}
+
+.lib-item span {
+  font-size: 12px;
+  color: #5a9ab0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.1s;
+}
+
+.lib-item:hover span {
+  color: #00d8ff;
+}
+
+
+
+/* =========================================================
+   PANELES PEGADOS AL CANVAS
+========================================================= */
+
+.hud-app > div,
+.hud-main,
+.main-layout,
+.editor-layout,
+.workspace{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+
+  gap:14px !important;
+
+  padding-left:160px !important;
+  padding-right:160px !important;
+
+  width:100% !important;
+
+  transform:scale(1.15);
+  transform-origin:top center;
+}
+
+/* PANEL IZQUIERDO */
+.left-panel,
+.library-panel{
+  width:270px !important;
+  min-width:270px !important;
+  max-width:270px !important;
+
+  margin-right:-120px !important;
+
+  position:relative !important;
+  z-index:10 !important;
+
+  flex-shrink:0 !important;
+}
+
+/* PANEL DERECHO */
+.right-panel,
+.tools-panel{
+  width:270px !important;
+  min-width:270px !important;
+  max-width:270px !important;
+
+  margin-left:-120px !important;
+
+  position:relative !important;
+  z-index:10 !important;
+
+  flex-shrink:0 !important;
+}
+
+/* CANVAS */
+.canvas-wrapper,
+.canvas-container,
+.center-panel,
+.canvas-panel{
+  flex-shrink:0 !important;
+
+  position:relative !important;
+  z-index:1 !important;
+}
+
+*[style*="space-between"]{
+  justify-content:center !important;
+}
+
+html{
+  zoom:100%;
+}
+
+body{
+  overflow:hidden;
+}
