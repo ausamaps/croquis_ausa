@@ -1,0 +1,23 @@
+<svg viewBox="0 0 55 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Casa vista superior -->
+  <!-- sombra -->
+  <rect x="6" y="6" width="44" height="40" rx="2" fill="#888" opacity="0.2"/>
+  <!-- techo (vista superior muestra el techo) -->
+  <rect x="4" y="4" width="44" height="40" rx="2" fill="#c05030" stroke="#902010" stroke-width="1.2"/>
+  <!-- tejas / paneles del techo -->
+  <line x1="26" y1="4" x2="26" y2="44" stroke="#902010" stroke-width="1" opacity="0.6"/>
+  <line x1="4" y1="24" x2="48" y2="24" stroke="#902010" stroke-width="1" opacity="0.6"/>
+  <!-- cumbrera central -->
+  <rect x="23" y="4" width="6" height="40" rx="1" fill="#a04020" opacity="0.5"/>
+  <!-- chimenea -->
+  <rect x="34" y="7" width="7" height="7" rx="1" fill="#888" stroke="#555" stroke-width="0.8"/>
+  <rect x="35" y="8" width="5" height="5" rx="0.5" fill="#444"/>
+  <!-- puerta (frente) -->
+  <rect x="21" y="36" width="10" height="8" rx="1" fill="#8a5020" stroke="#6a3810" stroke-width="0.8"/>
+  <circle cx="29" cy="41" r="1" fill="#c8a060"/>
+  <!-- ventanas -->
+  <rect x="8" y="10" width="8" height="7" rx="1" fill="#a8d8f0" stroke="#6090b0" stroke-width="0.7"/>
+  <rect x="36" y="10" width="8" height="7" rx="1" fill="#a8d8f0" stroke="#6090b0" stroke-width="0.7"/>
+  <rect x="8" y="28" width="8" height="7" rx="1" fill="#a8d8f0" stroke="#6090b0" stroke-width="0.7"/>
+  <rect x="36" y="28" width="8" height="7" rx="1" fill="#a8d8f0" stroke="#6090b0" stroke-width="0.7"/>
+</svg>

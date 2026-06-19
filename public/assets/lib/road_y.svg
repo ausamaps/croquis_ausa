@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Y-intersección: sube por el centro, bifurca arriba-izq y arriba-der -->
+  <rect width="100" height="100" fill="#c8d8a0"/>
+  <!-- ramal izquierdo superior -->
+  <path d="M0,0 L38,0 L50,50 L36,50 Q28,26 0,12 Z" fill="#b0b0b0"/>
+  <path d="M4,0 L36,0 L48,46 L38,46 Q30,24 4,10 Z" fill="#555"/>
+  <!-- ramal derecho superior -->
+  <path d="M62,0 L100,0 L100,12 Q72,26 64,50 L50,50 Z" fill="#b0b0b0"/>
+  <path d="M64,0 L96,0 L96,10 Q70,24 62,46 L52,46 Z" fill="#555"/>
+  <!-- ramal inferior central -->
+  <rect x="36" y="50" width="28" height="50" fill="#b0b0b0"/>
+  <rect x="40" y="50" width="20" height="50" fill="#555"/>
+  <!-- línea central ramal izq -->
+  <path d="M43,50 Q35,28 2,6" fill="none" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- línea central ramal der -->
+  <path d="M57,50 Q65,28 98,6" fill="none" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- línea central ramal inferior -->
+  <line x1="50" y1="50" x2="50" y2="100" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- isla central -->
+  <path d="M50,50 L43,50 Q44,40 50,35 Q56,40 57,50 Z" fill="#c8d8a0" stroke="#888" stroke-width="0.8"/>
+</svg>

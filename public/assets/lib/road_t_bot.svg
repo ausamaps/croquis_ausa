@@ -1,0 +1,30 @@
+<svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- T-intersección: calle horizontal abajo, ramal sube al centro -->
+  <rect width="120" height="90" fill="#c8d8a0"/>
+  <!-- veredas ramal vertical -->
+  <rect x="40" y="0" width="8" height="54" fill="#b0b0b0"/>
+  <rect x="72" y="0" width="8" height="54" fill="#b0b0b0"/>
+  <!-- vereda horizontal -->
+  <rect x="0" y="54" width="120" height="36" fill="#b0b0b0"/>
+  <!-- asfalto ramal vertical -->
+  <rect x="44" y="0" width="32" height="54" fill="#555"/>
+  <!-- asfalto horizontal -->
+  <rect x="0" y="54" width="120" height="32" fill="#555"/>
+  <!-- línea central ramal -->
+  <line x1="60" y1="0" x2="60" y2="54" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- línea central horizontal -->
+  <line x1="0" y1="70" x2="44" y2="70" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="76" y1="70" x2="120" y2="70" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- bordes ramal -->
+  <line x1="44" y1="0" x2="44" y2="54" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <line x1="76" y1="0" x2="76" y2="54" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <!-- bordes horizontal -->
+  <line x1="0" y1="54" x2="44" y2="54" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <line x1="76" y1="54" x2="120" y2="54" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <line x1="0" y1="86" x2="120" y2="86" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <!-- paso peatonal -->
+  <rect x="44" y="50" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="52" y="50" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="60" y="50" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="68" y="50" width="4" height="4" fill="white" opacity="0.8"/>
+</svg>

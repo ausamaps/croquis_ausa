@@ -1,0 +1,23 @@
+<svg viewBox="0 0 55 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Estación de servicio vista superior -->
+  <!-- playa (asfalto) -->
+  <rect x="2" y="2" width="51" height="46" rx="3" fill="#aaa" stroke="#888" stroke-width="1"/>
+  <!-- techo de la isla central -->
+  <rect x="8" y="8" width="26" height="34" rx="2" fill="#ddd" stroke="#999" stroke-width="1"/>
+  <!-- edificio/tienda -->
+  <rect x="10" y="10" width="22" height="20" rx="2" fill="#e8d8c0" stroke="#b0a080" stroke-width="1"/>
+  <!-- ventana tienda -->
+  <rect x="12" y="12" width="8" height="6" rx="1" fill="#a8d8f0" stroke="#6090b0" stroke-width="0.7"/>
+  <rect x="22" y="12" width="8" height="6" rx="1" fill="#a8d8f0" stroke="#6090b0" stroke-width="0.7"/>
+  <!-- puerta tienda -->
+  <rect x="16" y="22" width="8" height="8" rx="1" fill="#8a7060" stroke="#6a5040" stroke-width="0.8"/>
+  <!-- surtidores -->
+  <rect x="36" y="10" width="8" height="12" rx="2" fill="#e03020" stroke="#b01010" stroke-width="1"/>
+  <rect x="36" y="26" width="8" height="12" rx="2" fill="#2050c0" stroke="#1030a0" stroke-width="1"/>
+  <!-- logo/letrero (círculo naranja) -->
+  <circle cx="40" cy="40" r="5" fill="#ff8800" stroke="#cc5500" stroke-width="1"/>
+  <text x="40" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" font-weight="bold" fill="white">GAS</text>
+  <!-- líneas de carril acceso -->
+  <line x1="2" y1="25" x2="8" y2="25" stroke="white" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="34" y1="25" x2="53" y2="25" stroke="white" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

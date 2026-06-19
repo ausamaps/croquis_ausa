@@ -1,0 +1,15 @@
+<svg viewBox="0 0 35 55" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pino vista superior — estrella con capas -->
+  <!-- sombra -->
+  <ellipse cx="19" cy="32" rx="12" ry="11" fill="#1a4a18" opacity="0.2"/>
+  <!-- capa inferior (más amplia) -->
+  <polygon points="17.5,12 21,20 28,18 24,24 32,26 24,28 28,34 21,32 17.5,40 14,32 7,34 11,28 3,26 11,24 7,18 14,20" fill="#2a6a20"/>
+  <!-- capa media -->
+  <polygon points="17.5,16 20,22 26,21 23,25 29,27 23,29 26,33 20,31 17.5,37 15,31 9,33 12,29 6,27 12,25 9,21 15,22" fill="#389028" opacity="0.9"/>
+  <!-- capa superior (más pequeña) -->
+  <polygon points="17.5,20 19.5,25 24,24 21.5,27 25,29 21.5,31 24,34 19.5,32 17.5,37 15.5,32 11,34 13.5,31 10,29 13.5,27 11,24 15.5,25" fill="#48a830" opacity="0.85"/>
+  <!-- copa central -->
+  <circle cx="17.5" cy="28" r="4" fill="#60c040"/>
+  <!-- tronco -->
+  <ellipse cx="17.5" cy="48" rx="2.5" ry="4" fill="#7a5020" stroke="#5a3810" stroke-width="0.8"/>
+</svg>

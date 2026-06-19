@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Curva 4 carriles derecha: entra por abajo, sale por la izquierda -->
+  <rect width="100" height="100" fill="#c8d8a0"/>
+  <!-- vereda exterior -->
+  <path d="M100,100 L100,52 Q100,0 48,0 L0,0 L0,8 Q40,8 40,8 Q92,8 92,60 L92,100 Z" fill="#b0b0b0"/>
+  <!-- asfalto curva (más ancho = 4 carriles ~40px) -->
+  <path d="M100,52 Q100,0 48,0 L0,0 L0,8 Q40,8 40,8 Q92,8 92,60 L92,100 L100,100 Z" fill="#555"/>
+  <path d="M100,52 Q96,0 48,4 L0,4 L0,8 Q40,8 40,8 Q88,8 88,60 L88,100" fill="#555"/>
+  <!-- carril izquierdo interno -->
+  <path d="M0,4 Q48,4 48,0" fill="none" stroke="#555" stroke-width="0"/>
+  <!-- línea central doble amarilla -->
+  <path d="M100,72 Q76,72 76,48 Q76,16 48,16 L0,16" fill="none" stroke="#ffcc00" stroke-width="1.2"/>
+  <path d="M100,68 Q72,68 72,48 Q72,20 48,20 L0,20" fill="none" stroke="#ffcc00" stroke-width="1.2"/>
+  <!-- líneas de carril blancas -->
+  <path d="M100,82 Q86,82 86,68 Q86,12 48,12 L0,12" fill="none" stroke="white" stroke-width="1" stroke-dasharray="6,4"/>
+  <path d="M100,58 Q62,58 62,48 Q62,28 48,28 L0,28" fill="none" stroke="white" stroke-width="1" stroke-dasharray="6,4"/>
+  <!-- borde exterior -->
+  <path d="M100,92 Q92,92 92,84 Q92,8 40,8 L0,8" fill="none" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <!-- borde interior -->
+  <path d="M100,52 Q100,4 48,4 L0,4" fill="none" stroke="#888" stroke-width="1" opacity="0.5"/>
+</svg>

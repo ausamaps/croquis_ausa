@@ -1,0 +1,27 @@
+<svg viewBox="0 0 70 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vehículo volcado/accidentado vista superior — rotado ~35° con daños -->
+  <g transform="translate(35,25) rotate(35) translate(-20,-32)">
+    <!-- carrocería deformada -->
+    <rect x="3" y="4" width="34" height="56" rx="7" fill="#a08090" stroke="#1a2a3a" stroke-width="1.5"/>
+    <!-- vidrios rotos (líneas diagonales) -->
+    <path d="M9 12 L31 12 L29 22 L11 22 Z" fill="#b8d0d8" stroke="#1a2a3a" stroke-width="0.8"/>
+    <line x1="11" y1="14" x2="27" y2="20" stroke="#1a2a3a" stroke-width="0.8" opacity="0.7"/>
+    <line x1="27" y1="14" x2="14" y2="20" stroke="#1a2a3a" stroke-width="0.8" opacity="0.7"/>
+    <rect x="10" y="22" width="20" height="22" rx="2" fill="#806878" stroke="#1a2a3a" stroke-width="0.5"/>
+    <path d="M11 44 L29 44 L31 54 L9 54 Z" fill="#b8d0d8" stroke="#1a2a3a" stroke-width="0.8"/>
+    <line x1="11" y1="46" x2="27" y2="52" stroke="#1a2a3a" stroke-width="0.8" opacity="0.7"/>
+    <!-- ruedas desprendidas -->
+    <rect x="-2" y="8" width="5" height="11" rx="2" fill="#333" stroke="#555" stroke-width="0.5"/>
+    <rect x="37" y="8" width="5" height="11" rx="2" fill="#333" stroke="#555" stroke-width="0.5"/>
+    <rect x="-2" y="48" width="5" height="11" rx="2" fill="#333" stroke="#555" stroke-width="0.5"/>
+    <rect x="37" y="48" width="5" height="11" rx="2" fill="#333" stroke="#555" stroke-width="0.5"/>
+  </g>
+  <!-- marcas de impacto / escombros -->
+  <circle cx="12" cy="8" r="2" fill="#888" opacity="0.6"/>
+  <circle cx="58" cy="42" r="1.5" fill="#888" opacity="0.6"/>
+  <circle cx="55" cy="12" r="1" fill="#888" opacity="0.5"/>
+  <circle cx="15" cy="40" r="1.5" fill="#888" opacity="0.5"/>
+  <!-- X de peligro -->
+  <line x1="8" y1="44" x2="16" y2="50" stroke="#ff2020" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="16" y1="44" x2="8" y2="50" stroke="#ff2020" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+</svg>

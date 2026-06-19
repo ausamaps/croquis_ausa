@@ -1,0 +1,10 @@
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Señal PARE — octógono rojo -->
+  <!-- poste -->
+  <rect x="18" y="30" width="4" height="10" rx="1" fill="#888"/>
+  <!-- octógono -->
+  <polygon points="14,2 26,2 38,14 38,26 26,38 14,38 2,26 2,14" fill="#cc0000" stroke="white" stroke-width="1.5"/>
+  <polygon points="15,5 25,5 35,15 35,25 25,35 15,35 5,25 5,15" fill="none" stroke="white" stroke-width="1"/>
+  <!-- texto PARE -->
+  <text x="20" y="24" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="9" font-weight="900" fill="white" letter-spacing="0.5">PARE</text>
+</svg>

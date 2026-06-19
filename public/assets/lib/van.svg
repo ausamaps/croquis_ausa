@@ -1,0 +1,22 @@
+<svg viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
+  <!-- Van/SUV: más ancho y cuadrado -->
+  <rect x="4" y="3" width="42" height="64" rx="6" fill="#8ab898" stroke="#1a2a3a" stroke-width="1.5"/>
+  <!-- parabrisas grande -->
+  <path d="M8 10 L42 10 L41 21 L9 21 Z" fill="#c8e8c8" stroke="#1a2a3a" stroke-width="0.8"/>
+  <!-- cabina/techo -->
+  <rect x="9" y="21" width="32" height="28" rx="2" fill="#6a9878" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- ventana trasera -->
+  <path d="M9 49 L41 49 L42 60 L8 60 Z" fill="#c8e8c8" stroke="#1a2a3a" stroke-width="0.8"/>
+  <!-- división de puertas -->
+  <line x1="4" y1="38" x2="46" y2="38" stroke="#1a2a3a" stroke-width="0.7" opacity="0.4"/>
+  <!-- ruedas -->
+  <rect x="0" y="8" width="6" height="13" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="44" y="8" width="6" height="13" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="0" y="49" width="6" height="13" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="44" y="49" width="6" height="13" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <!-- faros -->
+  <rect x="7" y="3" width="12" height="5" rx="1.5" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <rect x="31" y="3" width="12" height="5" rx="1.5" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <rect x="7" y="62" width="12" height="5" rx="1.5" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+  <rect x="31" y="62" width="12" height="5" rx="1.5" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+</svg>

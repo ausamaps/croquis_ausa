@@ -1,0 +1,32 @@
+<svg viewBox="0 0 100 45" xmlns="http://www.w3.org/2000/svg">
+  <!-- Camión de reparto vista superior, frente a la derecha -->
+  <!-- caja de carga -->
+  <rect x="3" y="5" width="58" height="35" rx="3" fill="#e8d8b0" stroke="#1a2a3a" stroke-width="1.5"/>
+  <rect x="6" y="8" width="52" height="29" rx="2" fill="#d8c898" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- líneas de paneles -->
+  <line x1="25" y1="8" x2="25" y2="37" stroke="#1a2a3a" stroke-width="0.5" opacity="0.35"/>
+  <line x1="44" y1="8" x2="44" y2="37" stroke="#1a2a3a" stroke-width="0.5" opacity="0.35"/>
+  <!-- puerta trasera carga -->
+  <rect x="3" y="13" width="4" height="19" rx="1" fill="#c8b880" stroke="#1a2a3a" stroke-width="0.5"/>
+  <line x1="5" y1="22" x2="5" y2="22" stroke="#1a2a3a" stroke-width="1" stroke-linecap="round"/>
+  <!-- cabina -->
+  <rect x="60" y="4" width="36" height="37" rx="5" fill="#c88040" stroke="#1a2a3a" stroke-width="1.5"/>
+  <rect x="62" y="7" width="20" height="19" rx="2" fill="#a86030" stroke="#1a2a3a" stroke-width="0.5"/>
+  <rect x="80" y="8" width="13" height="13" rx="2" fill="#c8e0f0" stroke="#1a2a3a" stroke-width="0.8"/>
+  <!-- ruedas carga -->
+  <rect x="10" y="0" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="10" y="39" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="40" y="0" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="40" y="39" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <!-- ruedas cabina -->
+  <rect x="63" y="0" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="63" y="39" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="82" y="0" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="82" y="39" width="9" height="6" rx="1.5" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <!-- faros frente -->
+  <rect x="94" y="6" width="4" height="8" rx="1" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <rect x="94" y="31" width="4" height="8" rx="1" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <!-- luces traseras -->
+  <rect x="3" y="5" width="3" height="6" rx="1" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+  <rect x="3" y="34" width="3" height="6" rx="1" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+</svg>
