@@ -612,7 +612,7 @@ export default function App() {
                 <GroupRow label={g} count={items.length} open={isOpen(g)} onToggle={()=>toggle(g)}/>
                 {isOpen(g)&&(<div style={{paddingLeft:6,paddingBottom:4}}>
                   {items.map(it=><LibItem key={it.slug} label={it.label}
-                    src={it.src||`/assets/lib/${it.slug}.png`}
+                    src={it.src || `${import.meta.env.BASE_URL}assets/lib/${it.slug}.png`}
                     onAdd={()=>addEl(it)}
                     onDragStart={e=>startLibDrag(it,e)}
                     onDragEnd={clearLibDrag}/>)}
