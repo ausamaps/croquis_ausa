@@ -1,6 +1,7 @@
 import { Stage, Layer, Rect, Image as KonvaImage, Transformer, Line } from "react-konva";
 import { useState, useEffect, useRef, useCallback } from "react";
 import useImage from "use-image";
+const BASE = import.meta.env.BASE_URL;
 
 const C = {
   appBg:   "#030810",
@@ -95,14 +96,14 @@ const BUILTIN = {
     {slug:"compass",label:"Norte",w:50,h:50},{slug:"park",label:"Parque",w:55,h:55},
   ],
   "Fotos propias": [
-    {slug:"u_auto",label:"Auto (foto)",src:"/assets/auto.png",w:50,h:85},
-    {slug:"u_moto",label:"Moto (foto)",src:"/assets/moto.png",w:75,h:55},
-    {slug:"u_camion",label:"Camión (foto)",src:"/assets/camion.png",w:130,h:55},
-    {slug:"u_peaton",label:"Peatón (foto)",src:"/assets/peaton.png",w:40,h:85},
-    {slug:"u_calle",label:"Calle recta",src:"/assets/calle_recta.png",w:180,h:75},
-    {slug:"u_rotonda",label:"Rotonda",src:"/assets/rotonda.png",w:110,h:110},
-    {slug:"u_semaf",label:"Semáforo (foto)",src:"/assets/semaforo.png",w:45,h:90},
-    {slug:"u_stop",label:"STOP (foto)",src:"/assets/senial_stop.png",w:50,h:90},
+    {slug:"u_auto",label:"Auto (foto)",src:`${BASE}assets/auto.png",w:50,h:85},
+    {slug:"u_moto",label:"Moto (foto)",src:`${BASE}assets/moto.png",w:75,h:55},
+    {slug:"u_camion",label:"Camión (foto)",src:`${BASE}assets/camion.png",w:130,h:55},
+    {slug:"u_peaton",label:"Peatón (foto)",src:`${BASE}assets/peaton.png",w:40,h:85},
+    {slug:"u_calle",label:"Calle recta",src:`${BASE}assets/calle_recta.png",w:180,h:75},
+    {slug:"u_rotonda",label:"Rotonda",src:`${BASE}assets/rotonda.png",w:110,h:110},
+    {slug:"u_semaf",label:"Semáforo (foto)",src:`${BASE}assets/semaforo.png",w:45,h:90},
+    {slug:"u_stop",label:"STOP (foto)",src:`${BASE}assets/senial_stop.png",w:50,h:90},
   ],
 };
 const GRP_ICON = {"Vehículos":"🚗","Calles y vías":"🛣️","Señales":"🚦","Entorno":"🌳","Fotos propias":"📷"};
@@ -165,7 +166,7 @@ function LibItem({label,src,onAdd,onDragStart,onDragEnd}) {
 }
 
 function CanvasEl({el,isSel,onSel,onChange,snap}) {
-  const src=el.dataUrl||el.src||`/assets/lib/${el.slug}.png`;
+  const src=el.dataUrl||el.src||`${BASE}assets/lib/${el.slug}.png`;
   const [img]=useImage(src);
   const ref=useRef(null),tr=useRef(null);
   useEffect(()=>{
@@ -612,7 +613,7 @@ export default function App() {
                 <GroupRow label={g} count={items.length} open={isOpen(g)} onToggle={()=>toggle(g)}/>
                 {isOpen(g)&&(<div style={{paddingLeft:6,paddingBottom:4}}>
                   {items.map(it=><LibItem key={it.slug} label={it.label}
-                    src={it.src || `${import.meta.env.BASE_URL}assets/lib/${it.slug}.png`}
+                    src={it.src || `${BASE}assets/lib/${it.slug}.png`}
                     onAdd={()=>addEl(it)}
                     onDragStart={e=>startLibDrag(it,e)}
                     onDragEnd={clearLibDrag}/>)}
@@ -804,7 +805,7 @@ export default function App() {
                 </div>
                 <div style={{maxHeight:160,overflowY:"auto"}}>
                   {[...els].reverse().map((el,i)=>{
-                    const src = el.dataUrl || el.src || `${import.meta.env.BASE_URL}assets/lib/${el.slug}.png`;
+                    const src = el.dataUrl || el.src || `${BASE}assets/lib/${el.slug}.png`;
                     const on=el.id===selId;
                     return(
                       <div key={el.id} onClick={()=>setSelId(el.id)}
