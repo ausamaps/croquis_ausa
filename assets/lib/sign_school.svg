@@ -1,0 +1,18 @@
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Escuela — señal amarilla pentagonal con figura niño -->
+  <rect x="18" y="33" width="4" height="7" rx="1" fill="#888"/>
+  <!-- forma pentagonal (señal escolar) -->
+  <polygon points="20,3 37,12 37,32 3,32 3,12" fill="#f0c020" stroke="#c09000" stroke-width="1.2"/>
+  <!-- figura niña/niño con mochila -->
+  <circle cx="20" cy="13" r="3" fill="#1a1a1a"/>
+  <!-- cuerpo -->
+  <line x1="20" y1="16" x2="20" y2="24" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- brazos -->
+  <line x1="20" y1="18" x2="15" y2="22" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="20" y1="18" x2="25" y2="21" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- piernas -->
+  <line x1="20" y1="24" x2="17" y2="29" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="20" y1="24" x2="23" y2="29" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- mochila -->
+  <rect x="21" y="16" width="4" height="6" rx="1" fill="#555" opacity="0.7"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 25 55" xmlns="http://www.w3.org/2000/svg">
+  <!-- Persona vista superior caminando -->
+  <!-- cabeza -->
+  <ellipse cx="12.5" cy="6" rx="5" ry="5.5" fill="#e8c89a" stroke="#1a2a3a" stroke-width="1.2"/>
+  <!-- cuello -->
+  <rect x="10" y="11" width="5" height="3" rx="1" fill="#d8b888" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- torso -->
+  <rect x="7" y="14" width="11" height="16" rx="3" fill="#4a6890" stroke="#1a2a3a" stroke-width="1.2"/>
+  <!-- brazo izquierdo (adelantado) -->
+  <ellipse cx="4" cy="22" rx="2.5" ry="7" fill="#4a6890" stroke="#1a2a3a" stroke-width="0.8" transform="rotate(-10,4,22)"/>
+  <!-- brazo derecho (atrasado) -->
+  <ellipse cx="21" cy="24" rx="2.5" ry="6" fill="#3a5880" stroke="#1a2a3a" stroke-width="0.8" transform="rotate(8,21,24)"/>
+  <!-- cadera -->
+  <rect x="7.5" y="30" width="10" height="6" rx="2" fill="#2a3850" stroke="#1a2a3a" stroke-width="0.8"/>
+  <!-- pierna izquierda -->
+  <ellipse cx="9" cy="44" rx="3" ry="8" fill="#2a3850" stroke="#1a2a3a" stroke-width="0.8" transform="rotate(-6,9,44)"/>
+  <!-- pierna derecha -->
+  <ellipse cx="16" cy="43" rx="3" ry="8" fill="#2a3850" stroke="#1a2a3a" stroke-width="0.8" transform="rotate(6,16,43)"/>
+  <!-- pies -->
+  <ellipse cx="8" cy="52" rx="3" ry="2" fill="#1a1a1a" stroke="#333" stroke-width="0.5"/>
+  <ellipse cx="17" cy="51" rx="3" ry="2" fill="#1a1a1a" stroke="#333" stroke-width="0.5"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Doblar derecha — señal azul con flecha curva -->
+  <rect x="18" y="32" width="4" height="8" rx="1" fill="#888"/>
+  <rect x="3" y="3" width="34" height="29" rx="4" fill="#1a5fa8" stroke="#0d4080" stroke-width="1"/>
+  <!-- flecha curva derecha -->
+  <path d="M14,24 L14,16 Q14,10 20,10 Q26,10 26,16" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="30,16 22,12 22,20" fill="white"/>
+</svg>

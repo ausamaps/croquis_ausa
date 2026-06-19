@@ -1,0 +1,26 @@
+<svg viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg">
+  <!-- Parque vista superior -->
+  <!-- césped -->
+  <rect x="2" y="2" width="51" height="51" rx="4" fill="#6ab840" stroke="#4a9020" stroke-width="1.2"/>
+  <!-- sendero diagonal -->
+  <path d="M2,53 Q20,30 53,2" fill="none" stroke="#c8b888" stroke-width="5" opacity="0.7"/>
+  <!-- sendero cruzado -->
+  <path d="M2,2 Q30,25 53,53" fill="none" stroke="#c8b888" stroke-width="5" opacity="0.7"/>
+  <!-- árboles (círculos verdes oscuros) -->
+  <circle cx="10" cy="10" r="6" fill="#2a7820" stroke="#1a5810" stroke-width="0.8"/>
+  <circle cx="10" cy="10" r="3" fill="#48a030" opacity="0.7"/>
+  <circle cx="45" cy="10" r="6" fill="#2a7820" stroke="#1a5810" stroke-width="0.8"/>
+  <circle cx="45" cy="10" r="3" fill="#48a030" opacity="0.7"/>
+  <circle cx="10" cy="45" r="6" fill="#2a7820" stroke="#1a5810" stroke-width="0.8"/>
+  <circle cx="10" cy="45" r="3" fill="#48a030" opacity="0.7"/>
+  <circle cx="45" cy="45" r="6" fill="#2a7820" stroke="#1a5810" stroke-width="0.8"/>
+  <circle cx="45" cy="45" r="3" fill="#48a030" opacity="0.7"/>
+  <!-- árbol central -->
+  <circle cx="27" cy="27" r="7" fill="#2a7820" stroke="#1a5810" stroke-width="0.8"/>
+  <circle cx="27" cy="27" r="3.5" fill="#48a030" opacity="0.7"/>
+  <!-- banco del parque -->
+  <rect x="22" y="18" width="10" height="4" rx="1" fill="#c8a060" stroke="#a08040" stroke-width="0.6"/>
+  <!-- fuente -->
+  <circle cx="40" cy="38" r="4" fill="#60b0e0" stroke="#3088b8" stroke-width="0.8"/>
+  <circle cx="40" cy="38" r="2" fill="#88ccf0"/>
+</svg>

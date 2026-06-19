@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Curva 2 carriles izquierda: entra por abajo, sale por la derecha -->
+  <rect width="100" height="100" fill="#c8d8a0"/>
+  <!-- vereda curva exterior (más grande) -->
+  <path d="M0,100 L0,60 Q0,0 60,0 L100,0 L100,8 Q68,8 68,8 Q8,8 8,68 L8,100 Z" fill="#b0b0b0"/>
+  <!-- vereda curva interior -->
+  <path d="M0,100 L0,76 Q36,76 36,40 Q36,8 68,8 L100,8 L100,0 Q60,0 60,0 Q0,0 0,60 Z" fill="#c8d8a0"/>
+  <!-- asfalto curva -->
+  <path d="M0,68 Q0,36 36,36 Q72,36 72,0 L100,0 L100,8 Q80,8 80,8 Q44,8 44,44 Q44,76 8,76 L0,76 Z" fill="#555"/>
+  <!-- línea central amarilla -->
+  <path d="M0,72 Q4,72 4,72 Q40,72 40,40 Q40,4 76,4" fill="none" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- borde exterior -->
+  <path d="M0,68 Q0,36 36,36 Q72,36 72,0" fill="none" stroke="#888" stroke-width="1" opacity="0.6"/>
+  <!-- borde interior -->
+  <path d="M0,76 Q8,76 8,68 Q8,8 68,8 L100,8" fill="none" stroke="#888" stroke-width="1" opacity="0.6"/>
+</svg>

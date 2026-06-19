@@ -1,0 +1,37 @@
+<svg viewBox="0 0 90 45" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grúa/auxilio vial vista superior, frente a la derecha -->
+  <!-- plataforma trasera -->
+  <rect x="3" y="8" width="48" height="29" rx="3" fill="#d8c8a0" stroke="#1a2a3a" stroke-width="1.5"/>
+  <rect x="6" y="11" width="42" height="23" rx="2" fill="#c0b080" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- brazo de grúa (diagonal) -->
+  <line x1="12" y1="22" x2="46" y2="10" stroke="#c86020" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- cable de grúa -->
+  <line x1="46" y1="10" x2="50" y2="18" stroke="#555" stroke-width="1" stroke-linecap="round"/>
+  <!-- gancho -->
+  <path d="M49 18 Q52 20 50 24 Q48 26 46 24" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- soporte brazo -->
+  <rect x="8" y="17" width="8" height="10" rx="2" fill="#b05010" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- cabina -->
+  <rect x="50" y="5" width="36" height="35" rx="5" fill="#506080" stroke="#1a2a3a" stroke-width="1.5"/>
+  <rect x="52" y="8" width="20" height="18" rx="2" fill="#384860" stroke="#1a2a3a" stroke-width="0.5"/>
+  <rect x="70" y="9" width="13" height="12" rx="2" fill="#c8e0f0" stroke="#1a2a3a" stroke-width="0.8"/>
+  <!-- balizas techo -->
+  <circle cx="60" cy="7" r="2.5" fill="#ff8800" stroke="#cc5500" stroke-width="0.5"/>
+  <circle cx="70" cy="7" r="2.5" fill="#ff8800" stroke="#cc5500" stroke-width="0.5"/>
+  <!-- ruedas plataforma -->
+  <rect x="8" y="1" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="8" y="37" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="30" y="1" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="30" y="37" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <!-- ruedas cabina -->
+  <rect x="52" y="1" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="52" y="37" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="70" y="1" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="70" y="37" width="9" height="7" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <!-- faros frente -->
+  <rect x="84" y="7" width="4" height="7" rx="1" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <rect x="84" y="31" width="4" height="7" rx="1" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <!-- luces traseras -->
+  <rect x="3" y="8" width="3" height="5" rx="1" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+  <rect x="3" y="32" width="3" height="5" rx="1" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+</svg>

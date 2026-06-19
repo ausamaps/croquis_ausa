@@ -1,0 +1,34 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cruce 2 carriles — fondo terreno -->
+  <rect width="120" height="120" fill="#c8d8a0"/>
+  <!-- vereda horizontal -->
+  <rect x="0" y="40" width="120" height="40" fill="#b0b0b0"/>
+  <!-- vereda vertical -->
+  <rect x="40" y="0" width="40" height="120" fill="#b0b0b0"/>
+  <!-- asfalto horizontal -->
+  <rect x="0" y="44" width="120" height="32" fill="#555"/>
+  <!-- asfalto vertical -->
+  <rect x="44" y="0" width="32" height="120" fill="#555"/>
+  <!-- caja de cruce (mismo color asfalto) -->
+  <rect x="44" y="44" width="32" height="32" fill="#555"/>
+  <!-- línea central horizontal (amarilla) -->
+  <line x1="0" y1="60" x2="44" y2="60" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="76" y1="60" x2="120" y2="60" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- línea central vertical (amarilla) -->
+  <line x1="60" y1="0" x2="60" y2="44" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="60" y1="76" x2="60" y2="120" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- curbs/bordes de calzada -->
+  <rect x="0" y="44" width="120" height="2" fill="#888" opacity="0.5"/>
+  <rect x="0" y="74" width="120" height="2" fill="#888" opacity="0.5"/>
+  <rect x="44" y="0" width="2" height="120" fill="#888" opacity="0.5"/>
+  <rect x="74" y="0" width="2" height="120" fill="#888" opacity="0.5"/>
+  <!-- paso peatonal horizontal (rayas blancas) -->
+  <rect x="44" y="40" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="52" y="40" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="60" y="40" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="68" y="40" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="44" y="76" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="52" y="76" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="60" y="76" width="4" height="4" fill="white" opacity="0.8"/>
+  <rect x="68" y="76" width="4" height="4" fill="white" opacity="0.8"/>
+</svg>

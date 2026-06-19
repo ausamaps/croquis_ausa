@@ -1,0 +1,22 @@
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Peatones — señal amarilla con figura caminando -->
+  <rect x="18" y="32" width="4" height="8" rx="1" fill="#888"/>
+  <rect x="3" y="3" width="34" height="29" rx="4" fill="#f0c020" stroke="#c09000" stroke-width="1"/>
+  <!-- cabeza peatón -->
+  <circle cx="22" cy="10" r="3" fill="#1a1a1a"/>
+  <!-- cuerpo -->
+  <line x1="22" y1="13" x2="22" y2="22" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- brazo izq -->
+  <line x1="22" y1="16" x2="17" y2="20" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- brazo der -->
+  <line x1="22" y1="16" x2="27" y2="18" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- pierna izq -->
+  <line x1="22" y1="22" x2="18" y2="28" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- pierna der -->
+  <line x1="22" y1="22" x2="26" y2="28" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- rayas peatonales -->
+  <rect x="7" y="26" width="5" height="3" rx="0.5" fill="#1a1a1a" opacity="0.5"/>
+  <rect x="14" y="26" width="5" height="3" rx="0.5" fill="#1a1a1a" opacity="0.5"/>
+  <rect x="21" y="26" width="5" height="3" rx="0.5" fill="#1a1a1a" opacity="0.5"/>
+  <rect x="28" y="26" width="5" height="3" rx="0.5" fill="#1a1a1a" opacity="0.5"/>
+</svg>

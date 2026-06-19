@@ -1,0 +1,22 @@
+<svg viewBox="0 0 44 70" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pickup: cabina compacta + caja de carga trasera -->
+  <!-- caja de carga (parte inferior) -->
+  <rect x="4" y="38" width="36" height="28" rx="3" fill="#c8d8e8" stroke="#1a2a3a" stroke-width="1.5"/>
+  <!-- interior caja -->
+  <rect x="7" y="41" width="30" height="22" rx="2" fill="#a0b8cc" stroke="#1a2a3a" stroke-width="0.6"/>
+  <!-- cabina (parte superior) -->
+  <rect x="4" y="4" width="36" height="36" rx="5" fill="#7090b8" stroke="#1a2a3a" stroke-width="1.5"/>
+  <path d="M9 11 L35 11 L34 22 L10 22 Z" fill="#c8e0f0" stroke="#1a2a3a" stroke-width="0.8"/>
+  <rect x="10" y="22" width="24" height="14" rx="2" fill="#5878a0" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- línea entre cabina y caja -->
+  <line x1="4" y1="38" x2="40" y2="38" stroke="#1a2a3a" stroke-width="1.5"/>
+  <!-- ruedas -->
+  <rect x="0" y="8" width="5" height="12" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="39" y="8" width="5" height="12" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="0" y="50" width="5" height="14" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="39" y="50" width="5" height="14" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+  <rect x="7" y="4" width="10" height="4" rx="1.5" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <rect x="27" y="4" width="10" height="4" rx="1.5" fill="#fffaaa" stroke="#c8a000" stroke-width="0.5"/>
+  <rect x="7" y="63" width="10" height="4" rx="1.5" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+  <rect x="27" y="63" width="10" height="4" rx="1.5" fill="#ff5555" stroke="#aa0000" stroke-width="0.5"/>
+</svg>

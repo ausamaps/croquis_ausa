@@ -1,0 +1,21 @@
+<svg viewBox="0 0 30 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Moto vista superior: silueta estrecha -->
+  <!-- rueda delantera -->
+  <ellipse cx="15" cy="7" rx="5" ry="6" fill="#222" stroke="#1a2a3a" stroke-width="1"/>
+  <ellipse cx="15" cy="7" rx="2" ry="3" fill="#555"/>
+  <!-- horquilla/manubrio -->
+  <rect x="10" y="12" width="10" height="3" rx="1" fill="#888" stroke="#1a2a3a" stroke-width="0.5"/>
+  <!-- manubrio (ancho) -->
+  <line x1="5" y1="13" x2="25" y2="13" stroke="#555" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- chasis/tanque -->
+  <rect x="11" y="15" width="8" height="16" rx="3" fill="#c84040" stroke="#1a2a3a" stroke-width="1.2"/>
+  <!-- asiento -->
+  <rect x="10" y="31" width="10" height="12" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+  <!-- asiento trasero -->
+  <rect x="10.5" y="43" width="9" height="7" rx="2" fill="#2a2a2a" stroke="#333" stroke-width="0.6"/>
+  <!-- rueda trasera -->
+  <ellipse cx="15" cy="54" rx="5" ry="6" fill="#222" stroke="#1a2a3a" stroke-width="1"/>
+  <ellipse cx="15" cy="54" rx="2" ry="3" fill="#555"/>
+  <!-- escape -->
+  <line x1="19" y1="30" x2="23" y2="48" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
