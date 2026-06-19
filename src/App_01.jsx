@@ -96,14 +96,14 @@ const BUILTIN = {
     {slug:"compass",label:"Norte",w:50,h:50},{slug:"park",label:"Parque",w:55,h:55},
   ],
   "Fotos propias": [
-    {slug:"u_auto",label:"Auto (foto)",src:`${BASE}assets/auto.png`,w:50,h:85},
-    {slug:"u_moto",label:"Moto (foto)",src:`${BASE}assets/moto.png`,w:75,h:55},
-    {slug:"u_camion",label:"Camión (foto)",src:`${BASE}assets/camion.png`,w:130,h:55},
-    {slug:"u_peaton",label:"Peatón (foto)",src:`${BASE}assets/peaton.png`,w:40,h:85},
-    {slug:"u_calle",label:"Calle recta",src:`${BASE}assets/calle_recta.png`,w:180,h:75},
-    {slug:"u_rotonda",label:"Rotonda",src:`${BASE}assets/rotonda.png`,w:110,h:110},
-    {slug:"u_semaf",label:"Semáforo (foto)",src:`${BASE}assets/semaforo.png`,w:45,h:90},
-    {slug:"u_stop",label:"STOP (foto)",src:`${BASE}assets/senial_stop.png`,w:50,h:90},
+    {slug:"u_auto",label:"Auto (foto)",src:`${BASE}assets/auto.png",w:50,h:85},
+    {slug:"u_moto",label:"Moto (foto)",src:`${BASE}assets/moto.png",w:75,h:55},
+    {slug:"u_camion",label:"Camión (foto)",src:`${BASE}assets/camion.png",w:130,h:55},
+    {slug:"u_peaton",label:"Peatón (foto)",src:`${BASE}assets/peaton.png",w:40,h:85},
+    {slug:"u_calle",label:"Calle recta",src:`${BASE}assets/calle_recta.png",w:180,h:75},
+    {slug:"u_rotonda",label:"Rotonda",src:`${BASE}assets/rotonda.png",w:110,h:110},
+    {slug:"u_semaf",label:"Semáforo (foto)",src:`${BASE}assets/semaforo.png",w:45,h:90},
+    {slug:"u_stop",label:"STOP (foto)",src:`${BASE}assets/senial_stop.png",w:50,h:90},
   ],
 };
 const GRP_ICON = {"Vehículos":"🚗","Calles y vías":"🛣️","Señales":"🚦","Entorno":"🌳","Fotos propias":"📷"};
