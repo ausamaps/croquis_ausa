@@ -804,7 +804,7 @@ export default function App() {
                 </div>
                 <div style={{maxHeight:160,overflowY:"auto"}}>
                   {[...els].reverse().map((el,i)=>{
-                    const src=el.dataUrl||el.src||`/assets/lib/${el.slug}.png`;
+                    const src = el.dataUrl || el.src || `${import.meta.env.BASE_URL}assets/lib/${el.slug}.png`;
                     const on=el.id===selId;
                     return(
                       <div key={el.id} onClick={()=>setSelId(el.id)}
